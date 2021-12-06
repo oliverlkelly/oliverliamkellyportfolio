@@ -1,0 +1,59 @@
+:root{
+    background-color: black;
+    color: white;
+}
+
+.primary-header{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-style{
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 100vw;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#nav ul{
+    list-style: none;
+    gap: var(--gap, 1rem);
+
+}
+
+.flex{
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+#hero{
+    flex: block;
+    margin: auto;
+    text-align: center;
+    max-width: 1024px;
+    height: 200px;
+    background-color: rebeccapurple;
+}
+
+#projects{
+    height: 1000;
+}
+
+#projects p{
+    flex: block;
+    margin: auto;
+    text-align: center;
+    max-width: 1024px;
+    height: 1000;    
+}
