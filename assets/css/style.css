@@ -37,7 +37,7 @@ a{
     text-decoration: inherit;
 }
 
-#nav ul{
+nav ul{
     list-style: none;
     gap: var(--gap, 1rem);
 
@@ -70,3 +70,5 @@ a{
     max-width: 1024px;
     height: 1000;    
 }
+
+/*contact
