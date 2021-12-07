@@ -71,4 +71,27 @@ nav ul{
     height: 1000;    
 }
 
-/*contact
+.projects{
+    display: flex;
+}
+
+#contact ul{
+    list-style: none;
+    display: flex;
+    gap: var(--gap, 1rem);
+    justify-content: right;
+    align-items: center;
+}
+
+.contact-infortmation{
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 100vw;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+}
