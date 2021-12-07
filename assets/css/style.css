@@ -72,9 +72,11 @@ nav ul{
     background-color: steelblue;
 }
 
-h2{
-    align-items: center;
-    justify-content: center;
+.wrapper{
+    padding: 25vh;
+}
+.wrapper h2{
+    font-size: 50pt;
 }
 
 .section-set:not(.hero){
