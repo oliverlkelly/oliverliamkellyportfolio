@@ -3,6 +3,14 @@
     color: white;
 }
 
+.flex:not(ul){
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+}
+.flex{
+    display: flex;
+    gap: var(--gap, 1rem);
+}
 .primary-header{
     align-items: center;
     justify-content: space-between;
@@ -20,6 +28,9 @@
     margin: 0;
     cursor: pointer;
 }
+.button-style:hover{
+    background-color: steelblue;
+}
 
 a{
     color: inherit;
@@ -32,10 +43,7 @@ a{
 
 }
 
-.flex{
-    display: flex;
-    gap: var(--gap, 1rem);
-}
+
 
 #hero{
     flex: block;
