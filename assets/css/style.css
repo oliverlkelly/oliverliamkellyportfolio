@@ -1,8 +1,5 @@
 :root{
-    background-image: url(../images/nightsky-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: black;
     color: white;
 }
 
