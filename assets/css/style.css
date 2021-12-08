@@ -24,6 +24,7 @@ html{
 .primary-header{
     align-items: center;
     justify-content: space-between;
+    z-index: 999;
 }
 
 .name{
@@ -72,21 +73,82 @@ nav ul{
     display: block;
     margin: auto;
     text-align: center;
-    max-width: 75%;
     min-height: 100vh;
+    max-width: 75vw;
     background-color: steelblue;
 }
 
 .wrapper{
     padding: 25vh;
+    max-width: 75vw;
 }
 .wrapper h2{
-    font-size: 2em;
+    font-size: 1em;
+}
+
+
+.row-span-2{
+    grid-row: span 2;
+}
+
+.row-span-4{
+    grid-row: span 4;
+}
+
+.grid{
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1660px){
+    .grid{
+        display: grid;
+        gap: 2vw;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.box-wrapper{
+    position: relative;
+    max-width: 75vw;
+    padding: 10rem;    
+}
+
+.box-wrapper .feature-project-tile{
+    width: 25vw;
+    height: 50vw;
+    background: white;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5vw;
+}
+
+.box-wrapper .project-tile{
+    width: 25vw;
+    height: 24vw;
+    background: white;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5vw;
+}
+
+.box-wrapper .minor-project-tile{
+    width: 25vw;
+    height: 11vw;
+    background: white;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5vw;
+}
+
+.feature-project-tile:hover,.project-tile:hover,.minor-project-tile:hover{
+    background: turquoise;
 }
 
 .section-set:not(.hero){
     min-height: 100vh;
-    padding: 5rem;
+    padding: 2rem;
 }
 
 #projects p{
@@ -104,7 +166,7 @@ nav ul{
 #contact ul{
     list-style: none;
     display: flex;
-    gap: var(--gap, 1rem);
+    gap: var(--gap, 2rem);
     justify-content: center;
     align-items: center;
 }
@@ -126,4 +188,16 @@ nav ul{
     border: none;
     border-radius: 100vw 0 0 100vw;
     padding: 0.5rem;
+}
+
+.item{
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 0 100vw 100vw 0;
+    padding: 0.5rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
 }
