@@ -44,10 +44,12 @@ html{
 }
 
 .liam{
+    transition: all 0.25s ease-in-out;
     color: rebeccapurple;
     font-style: bold;
 }
 .liam:hover{
+    transition: all 0.25s ease-in-out;
     color: steelblue;
 }
 
@@ -56,6 +58,7 @@ html{
 }
 
 .button-style{
+    transition: all 0.25s ease-in-out;
     background-color: rebeccapurple;
     border: none;
     border-radius: 100vw;
@@ -69,6 +72,7 @@ html{
     cursor: pointer;
 }
 .button-style:hover{
+    transition: all 0.25s ease-in-out;
     background-color: steelblue;
 }
 
@@ -174,7 +178,7 @@ nav ul{
 }
 
 .project-tile:hover,.minor-project-tile:hover{
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     background: steelblue;
 }
 
