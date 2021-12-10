@@ -28,15 +28,17 @@ html{
 }
 
 .avatar{
+    display: inline-block;
     border:none;
     overflow: hidden;
     object-fit: contain;
-    height: inherit;
-    width: inherit;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
-    justify-content: left;
+    align-items: center;
 }
 .name{
+    display: inline-block;
     font-size: 38px;
     justify-content: left;
 }
