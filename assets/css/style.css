@@ -124,42 +124,41 @@ nav ul li a:hover{
 .hero{
     display: flex;
     margin: auto;
-    min-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
     justify-content: center;
     align-items: center;
 }
-.wrapper{
+.hero-wrapper{
     background-color: red;
     max-width: 75vw;
-}
-
-
-/* .row-span-2{
-    grid-row: span 2;
-}
-
-.row-span-4{
-    grid-row: span 4;
-}
-
-.grid{
-    display: grid;
-    gap: 2vw;
-    grid-template-columns: repeat(3, 1fr);
-    z-index: -2;
-}
-
-.box-wrapper{
-    position: relative;
     justify-content: center;
+}
+/* END Styling for Hero section */
+
+/* START Styling for the Projects section*/
+.projects{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.projects h2{
+    margin-left: 20rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+    line-height: 100px;
+}
+.box-wrapper{
+    justify-content: center;
+    margin: auto;
     max-width: 75vw;
-    padding: 10rem;    
+    max-height: calc(100vh - 200px);     
 }
 
 .box-wrapper .feature-project-tile{
     transition: all 1s ease-in-out;
-    width: 25vw;
-    height: 50vw;
+    width: 40vh;
+    height: 70vh;
     background: steelblue;
     box-sizing: border-box;
     overflow: hidden;
@@ -168,8 +167,8 @@ nav ul li a:hover{
 }
 
 .box-wrapper .project-tile{
-    width: 25vw;
-    height: 24vw;
+    width: 40vh;
+    height: 34vh;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 5vw;
@@ -178,13 +177,25 @@ nav ul li a:hover{
 }
 
 .box-wrapper .minor-project-tile{
-    width: 25vw;
-    height: 11vw;
+    width: 40vh;
+    height: 15vh;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 5vw;
     transition: all 1s ease-in-out;
     background: rebeccapurple;
+}
+/* Grid setup */
+.row-span-2{
+    grid-row: span 2;
+}
+.row-span-4{
+    grid-row: span 4;
+}
+.grid{
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .feature-project-tile:hover img{
@@ -205,18 +216,7 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
 }
-
-#projects p{
-    flex: block;
-    margin: auto;
-    text-align: center;
-    height: 1000;    
-}
-
-.projects{
-    display: flex;
-}
-
+/* END Styling for the Projects section */
 
 #contact ul{
     list-style: none;
@@ -255,7 +255,7 @@ nav ul li a:hover{
 footer{
     display: flex;
     justify-content: center;
-} */
+}
 
 /* Media Queries */
 @media all and (max-width: 1225px){
