@@ -173,7 +173,7 @@ h2{
     font-size: 3rem;
     line-height: 100px;
 }
-/* .projects .feature-project-tile h3{
+.projects .feature-project-tile h3{
     background: rebeccapurple;
     color: white;
     font-weight: bold;
@@ -183,7 +183,7 @@ h2{
     position: absolute;
     margin-top: -170px;
     margin-left: -30px;
-} */
+}
 .box-wrapper{
     justify-content: center;
     margin: auto;
