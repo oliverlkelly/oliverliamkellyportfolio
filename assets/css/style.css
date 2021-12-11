@@ -125,13 +125,27 @@ nav ul li a:hover{
     display: flex;
     margin: auto;
     height: calc(100vh - 100px);
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
 }
 .hero-wrapper{
-    background-color: red;
-    max-width: 75vw;
-    justify-content: center;
+    background-color: rebeccapurple;
+    max-width: 55vw;
+    max-height: 33vw;
+    border-radius: 10vw;
+    margin-top: 15vh;
+    padding: 5rem;
+}
+.hero-wrapper h2{
+    text-align: right;
+    font-size: 3vw;
+}
+.colored-words{
+    transition: all 0.5s;
+}
+.colored-words:hover{
+    transition: all 0.5s;
+    color: steelblue;
+    cursor: pointer;
 }
 /* END Styling for Hero section */
 
