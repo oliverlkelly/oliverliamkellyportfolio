@@ -10,11 +10,13 @@ html{
 
 /* Header and Navigation Styling */
 
-/* header{
+/* Keeps header at top of page at all times */
+header{
     position: sticky;
     top: 0;
-} */
+} 
 
+/* Navigational element styling for the blur and section height etc */
 nav{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(1rem);
@@ -22,6 +24,7 @@ nav{
     width: 100%;
 }
 
+/* Styling for the name including transtiional elements to transition between blue and purple */
 nav h1{
     color: white;
     font-size: 50px;
@@ -40,17 +43,16 @@ nav h1{
     color: steelblue;
 }
 
+/* Styling for the nav buttons themselves, including transition between blue and purple */
 nav ul{
     float: right;
     margin-right: 20px;
 }
-
 nav ul li{
     display: inline-block;
     line-height: 100px;
     margin: 0 5px;
 }
-
 nav ul li a{
     transition: all 0.25s ease-in-out;
     color: white;
@@ -61,7 +63,6 @@ nav ul li a{
     font-weight: 500;
     text-transform: uppercase;
 }
-
 nav ul li a:hover{
     transition: all 0.25s ease-in-out;
     background-color: steelblue;
@@ -99,88 +100,6 @@ nav ul li a:hover{
     z-index: 999;
 }
 
-
-/*
-.flex{
-    display: flex;
-    gap: var(--gap, 1rem);
-    position: sticky;
-    top: 0;
-}
-.flex:not(ul, .avatar){
-    background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(1rem);
-    height: 5rem;
-    padding: 2rem;
-}
-
-.primary-header{
-    align-items: center;
-    justify-content: space-between;
-    z-index: 999;
-}
-
-.avatar{
-    display: inline-block;
-    border:none;
-    overflow: hidden;
-    object-fit: contain;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
-    align-items: center;
-}
-.name{
-    display: inline-block;
-    font-size: 38px;
-    justify-content: left;
-}
-
-.liam{
-    transition: all 0.25s ease-in-out;
-    color: rebeccapurple;
-    font-style: bold;
-}
-.liam:hover{
-    transition: all 0.25s ease-in-out;
-    color: steelblue;
-}
-
-.navigation{
-    justify-content: right;
-}
-
-.button-style{
-    transition: all 0.25s ease-in-out;
-    background-color: rebeccapurple;
-    border: none;
-    border-radius: 100vw;
-    color: white;
-    padding: 0.5rem;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1rem;
-    font-style: bold;
-    margin: 0;
-    cursor: pointer;
-}
-.button-style:hover{
-    transition: all 0.25s ease-in-out;
-    background-color: steelblue;
-}
-
-
-
-a{
-    color: inherit;
-    text-decoration: inherit;
-}
-
-nav ul{
-    list-style: none;
-    gap: var(--gap, 1rem);
-
-}*/
 
 .hero{
     display: block;
