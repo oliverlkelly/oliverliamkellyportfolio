@@ -148,13 +148,23 @@ nav ul li a:hover{
     font-size: 3rem;
     line-height: 100px;
 }
+.projects .feature-project-tile h3{
+    background: rebeccapurple;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 100vw;
+    position: absolute;
+    margin-top: -170px;
+    margin-left: -30px;
+}
 .box-wrapper{
     justify-content: center;
     margin: auto;
     max-width: 75vw;
     max-height: calc(100vh - 200px);     
 }
-
 .box-wrapper .feature-project-tile{
     transition: all 1s ease-in-out;
     width: 40vh;
@@ -165,7 +175,6 @@ nav ul li a:hover{
     object-fit: cover;
     border-radius: 5vw;
 }
-
 .box-wrapper .project-tile{
     width: 40vh;
     height: 34vh;
@@ -175,7 +184,6 @@ nav ul li a:hover{
     transition: all 1s ease-in-out;
     background: rebeccapurple;
 }
-
 .box-wrapper .minor-project-tile{
     width: 40vh;
     height: 15vh;
