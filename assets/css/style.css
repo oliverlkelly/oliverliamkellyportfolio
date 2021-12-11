@@ -8,8 +8,29 @@ html{
     justify-content: center;
 }
 
-
 /* Header and Navigation Styling */
+
+nav{
+    /* colour to be changed making it bold to see */
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+nav img{
+    border-radius: 25%;
+    border: red solid 20px;
+    height: 300px;
+}
+nav h1{
+    color: white;
+    font-size: 35px;
+    line-height: 100px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
 /*
 .flex{
     display: flex;
