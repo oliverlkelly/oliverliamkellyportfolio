@@ -7,6 +7,7 @@
 
 html{
     scroll-behavior: smooth;
+    display: block;
     justify-content: center;
 }
 
@@ -92,7 +93,6 @@ nav ul li a:hover{
     top: 0;
     float: left;
 }
-
 .visibility{
     height: 190px;
     width: 290px;
@@ -127,17 +127,15 @@ nav ul li a:hover{
     height: calc(100vh - 100px);
     justify-content: right;
 }
-.hero-wrapper{
+.hero-wrapper h2{
+    text-align: right;
+    font-size: 2vw;
     background-color: rebeccapurple;
     max-width: 55vw;
     max-height: 33vw;
     border-radius: 10vw;
     margin-top: 15vh;
     padding: 5rem;
-}
-.hero-wrapper h2{
-    text-align: right;
-    font-size: 3vw;
 }
 .colored-words{
     transition: all 0.5s;
@@ -149,14 +147,26 @@ nav ul li a:hover{
 }
 /* END Styling for Hero section */
 
+/* START Styling for About section */
+.about p{
+    background: rebeccapurple;
+    color: white;
+    width: 33vw;
+    margin: auto;
+    padding: 2em;
+    font-size: 1.25em;
+    border-radius: 10%;
+}
+/* END Styling for About section */
+
 /* START Styling for the Projects section*/
-.projects{
+section:not(.hero){
     display: flex;
     height: 100vh;
     flex-direction: column;
     padding-top: 100px;
 }
-.projects h2{
+h2{
     margin-left: 20rem;
     margin-top: 2rem;
     font-size: 3rem;
@@ -280,12 +290,30 @@ footer{
 }
 
 /* Media Queries */
+@media all and (max-width: 1565px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .hero-wrapper h2{
+        font-size: 1.6vw;
+        max-height: 66vw;
+    }
+}
 @media all and (max-width: 1225px){
     .name{
         font-size: 45px;
     }
     nav ul li a{
         font-size: 15px;
+    }
+    .hero{
+        justify-content: center;
+    }
+    .hero-wrapper h2{
+        text-align: center;
+        margin: auto;
+        margin-top: 10vh;
+        max-height: 75vh;
     }
 }
 @media all and (max-width: 1075px){
@@ -297,8 +325,7 @@ footer{
         width: 100%;
         height: 100vh;
         top: 100px;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(1rem);
+        background: rgb(70, 130, 180, 0.95);
         text-align: center;
         left: 100%;
         transition: all 0.5s;
