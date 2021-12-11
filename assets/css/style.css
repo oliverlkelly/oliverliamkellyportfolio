@@ -10,8 +10,7 @@ html{
     justify-content: center;
 }
 
-/* Header and Navigation Styling */
-
+/* START Header and Navigation Styling */
 /* Keeps header at top of page at all times */
 header{
     position: sticky;
@@ -71,7 +70,6 @@ nav ul li a:hover{
 }
 
 /* Implimenting the menu button for smaller screen sizes */
-
 #menu{
     display: none;
 }
@@ -87,7 +85,6 @@ nav ul li a:hover{
 .menu-button:hover{
     color: steelblue;
 }
-
 
 /* Styling for the profile image and border, including the blur for the border */
 .profile-image{
@@ -120,30 +117,24 @@ nav ul li a:hover{
     border-radius: 25%;
     transition: all 0.5s;
 }
+/* END Header and Navigation Styling */
 
+
+/* START Styling for Hero section */
 .hero{
-    display: block;
+    display: flex;
     margin: auto;
-    text-align: center;
-    min-height: 100vh;
-    max-width: 85vw;
-    background-color: steelblue;
-}
-
-.sect
-
-.wrapper{
-    padding: 25vh;
-    max-width: 75vw;
-    position: relative;
+    min-height: calc(100vh - 100px);
     justify-content: center;
+    align-items: center;
 }
-.wrapper h2{
-    font-size: 1em;
+.wrapper{
+    background-color: red;
+    max-width: 75vw;
 }
 
 
-.row-span-2{
+/* .row-span-2{
     grid-row: span 2;
 }
 
@@ -264,7 +255,7 @@ nav ul li a:hover{
 footer{
     display: flex;
     justify-content: center;
-}
+} */
 
 /* Media Queries */
 @media all and (max-width: 1225px){
