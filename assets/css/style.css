@@ -8,6 +8,9 @@ html{
     justify-content: center;
 }
 
+
+/* Header and Navigation Styling */
+/*
 .flex{
     display: flex;
     gap: var(--gap, 1rem);
@@ -87,7 +90,7 @@ nav ul{
     list-style: none;
     gap: var(--gap, 1rem);
 
-}
+}*/
 
 .hero{
     display: block;
